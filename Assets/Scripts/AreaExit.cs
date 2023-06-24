@@ -8,6 +8,7 @@ public class AreaExit : MonoBehaviour
 {
     // Variables
     public string areaToLoad;
+    public string areaTransitionName;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class AreaExit : MonoBehaviour
         if (other.tag == "Player")
         {
             SceneManager.LoadScene(areaToLoad);
-        }        
+            PlayerController.instance.areaTransitionName = areaTransitionName; // Player gets set to areaExit transition
+        }   
     }
 }

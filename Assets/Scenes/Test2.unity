@@ -176,12 +176,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5127205806621047514, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
-      propertyPath: areaToLoad
-      value: Test
+      propertyPath: areaTransitionName
+      value: Countryside-1
       objectReference: {fileID: 0}
     - target: {fileID: 5253349920704102672, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
       propertyPath: m_Name
       value: Area Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049343573305730364, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
+      propertyPath: transitionName
+      value: Countryside-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

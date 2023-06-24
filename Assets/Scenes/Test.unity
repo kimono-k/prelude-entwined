@@ -137,11 +137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1333541755026634785, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.49
+      value: 11.44
       objectReference: {fileID: 0}
     - target: {fileID: 1333541755026634785, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.97
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1333541755026634785, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -175,9 +175,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5127205806621047514, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
+      propertyPath: areaToLoad
+      value: Test2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127205806621047514, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
+      propertyPath: areaTransitionName
+      value: Countryside-1
+      objectReference: {fileID: 0}
     - target: {fileID: 5253349920704102672, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
       propertyPath: m_Name
       value: Area Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049343573305730364, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
+      propertyPath: transitionName
+      value: Countryside-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610462344239649269, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610462344239649269, guid: 87c324622984a4a4f8016716ffa0864a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -349,6 +369,7 @@ MonoBehaviour:
   theRB: {fileID: 1399278285}
   moveSpeed: 5
   myAnim: {fileID: 1399278288}
+  areaTransitionName: Countryside-1
 --- !u!95 &1399278288
 Animator:
   serializedVersion: 5
