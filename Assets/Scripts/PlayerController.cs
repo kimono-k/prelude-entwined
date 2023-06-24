@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -7,10 +8,19 @@ public class PlayerController : MonoBehaviour {
     public Rigidbody2D theRB;
     public float moveSpeed;
     public Animator myAnim;
+    public static PlayerController instance; // reference to playercontroller script in inspector
 
     // Start is called before the first frame update
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        } else
+        {
+            Destroy(gameObject);
+        }
+        
         DontDestroyOnLoad(gameObject);
     }
 
