@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public Rigidbody2D theRB;
     public float moveSpeed;
     public Animator myAnim;
-    public static PlayerController instance; // reference to playercontroller script in inspector
+    public static PlayerController instance; // Reference to PlayerController script in the inspector
 
     // Start is called before the first frame update
     void Start()
