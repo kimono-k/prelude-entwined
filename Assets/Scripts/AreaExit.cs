@@ -9,7 +9,7 @@ public class AreaExit : MonoBehaviour
     // Variables
     public string areaToLoad;
     public string areaTransitionName;
-    public AreaEntrance theEntrance;
+    public AreaEntrance theEntrance; // Reference to object
 
     // Start is called before the first frame update
     void Start()
