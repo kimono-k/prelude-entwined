@@ -9,11 +9,13 @@ public class AreaExit : MonoBehaviour
     // Variables
     public string areaToLoad;
     public string areaTransitionName;
+    public AreaEntrance theEntrance;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Reads identical exits to entrances, so it connects with each other
+        if (areaTransitionName != null) theEntrance.transitionName = areaTransitionName;
     }
 
     // Update is called once per frame
