@@ -6,10 +6,13 @@ using UnityEngine.Tilemaps;
 public class CameraController : MonoBehaviour
 {
     public Transform target;
+
     public Tilemap theMap;
     private Vector3 bottomLeftLimit; // Limit of tilemap
     private Vector3 topRightLimit; // Limit of tilemap
 
+    private float halfHeight;
+    private float halfWidth;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +20,13 @@ public class CameraController : MonoBehaviour
         if (PlayerController.instance != null)
         {
             target = PlayerController.instance.transform; // Data of position player
-            bottomLeftLimit = theMap.localBounds.min; // Bottom of x and y on the map
-            topRightLimit = theMap.localBounds.max; // Top of x and y on the map
+            
+            // Cutting blue places in camera
+            halfHeight = Camera.main.orthographicSize; // 5 (size) / 2 = 2.5
+            halfWidth = Camera.main.aspect * halfHeight; // Half of the width camera's view
+            theMap.CompressBounds(); // Removes excess blue space
+            bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f); // Bottom of x and y on the map
+            topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f); // Top of x and y on the map
         }
     }
 
