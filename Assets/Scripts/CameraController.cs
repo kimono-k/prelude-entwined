@@ -21,12 +21,14 @@ public class CameraController : MonoBehaviour
         {
             target = PlayerController.instance.transform; // Data of position player
             
-            // Cutting blue places in camera
+            // Blue space is the half of the camera, so omit the half to remove blue excess space
             halfHeight = Camera.main.orthographicSize; // 5 (size) / 2 = 2.5
             halfWidth = Camera.main.aspect * halfHeight; // Half of the width camera's view
             theMap.CompressBounds(); // Removes excess blue space
             bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f); // Bottom of x and y on the map
             topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f); // Top of x and y on the map
+
+            PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
         }
     }
 
