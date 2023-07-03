@@ -13,10 +13,9 @@ public class AreaEntrance : MonoBehaviour
         // The player must exist, only then execute this script
         if (PlayerController.instance != null)
         {
-            if (transitionName == PlayerController.instance.areaTransitionName) 
-            {
-                PlayerController.instance.transform.position = transform.position;
-            }
+            if (transitionName == PlayerController.instance.areaTransitionName) PlayerController.instance.transform.position = transform.position;
+            
+            UIFade.instance.FadeToTransparent();
         }
     }
 
