@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Security.Cryptography;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -25,7 +26,7 @@ public class PlayerController : MonoBehaviour {
             instance = this;
         } else
         {
-            Destroy(gameObject);
+            if (instance != this) Destroy(gameObject);
         }
         
         DontDestroyOnLoad(gameObject);
