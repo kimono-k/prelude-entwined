@@ -24,6 +24,22 @@ public class DialogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Box active in scene?
+        if (dialogBox.activeInHierarchy)
+        {
+            if (Input.GetButtonUp("Fire1"))
+            {
+                currentLine++;
+
+                if (currentLine >= dialogLines.Length)
+                {
+                    dialogBox.SetActive(false);
+                } else
+                {
+                    dialogText.text = dialogLines[currentLine];
+                }
+
+            }
+        }
     }
 }
