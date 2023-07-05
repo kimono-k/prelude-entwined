@@ -223,9 +223,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Ik vind dat je...
-  - Je excuses moet aanbieden.
-  - Een geluidskaart dien je zorgvuldig te verzenden jij vuile oplichter!
+  - n-Lisa
+  - Please help me!
+  - n-Greg
+  - Is everything okay?
+  - n-Lisa
+  - No!
+  - I can't find the rest of the BLACKPINK members.
+  - n-Greg
+  - Don't worry.
+  - I'll save them!
 --- !u!61 &14722568
 BoxCollider2D:
   m_ObjectHideFlags: 0
