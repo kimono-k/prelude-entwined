@@ -166,6 +166,7 @@ MonoBehaviour:
   moveSpeed: 5
   myAnim: {fileID: 4587088885136846053}
   areaTransitionName: Countryside-1
+  canMove: 1
 --- !u!95 &4587088885136846053
 Animator:
   serializedVersion: 5
