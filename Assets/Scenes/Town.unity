@@ -21643,6 +21643,8 @@ MonoBehaviour:
   charName: Soren
   playerLevel: 1
   currentExp: 250
+  expToNextLevel: 
+  maxLevel: 100
   currentHP: 0
   maxHP: 100
   currentMP: 0
