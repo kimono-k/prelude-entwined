@@ -60,8 +60,8 @@ public class CharStats : MonoBehaviour
                 currentExp -= expToNextLevel[playerLevel];
                 playerLevel++;
 
-                // Determine whether to add to strength or defense based on odd or even
-                if (playerLevel % 2 == 0)
+               
+                if (playerLevel % 2 == 0) 
                 {
                     strength++;
                 }
@@ -82,6 +82,5 @@ public class CharStats : MonoBehaviour
         {
             currentExp = 0;
         }
-
     }
 }
